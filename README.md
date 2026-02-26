@@ -2,7 +2,7 @@
 clinical-rag-retrieval-benchmark
 Replication materials for: "Embedding Model Selection for Clinical Retrieval-Augmented Generation: A Factorial Benchmark Study"
 Submitted to JMIR Medical Informatics.
-Preprint: [medRxiv link to be added]
+Preprint: none
 Overview
 This repository contains all code, data, and prompts needed to reproduce the experiments reported in the paper. The study benchmarks 10 embedding models and BM25 across three clinical corpora, two query formats, and four chunking strategies, totaling 294 experimental conditions. A factorial ANOVA with η² effect sizes quantifies the relative contributions of embedding model choice versus clinical context variables (corpus type, query format) to retrieval performance.
 Repository Structure
