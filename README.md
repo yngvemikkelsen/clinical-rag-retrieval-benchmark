@@ -19,7 +19,7 @@ This benchmark evaluates 13 retrieval configurations (10 embedding models, 2 abl
 ├── mtsamples_sample.csv               # MTSamples corpus (500 documents)
 ├── pmc_patients_sample.csv            # PMC-Patients corpus (500 documents)
 ├── synthetic_notes_copy.csv           # Synthetic corpus (500 documents)
-├── Scripts/
+├── scripts/
 │   ├── metadata_query_colab.py        # Validation query generation (Colab)
 │   ├── metadata_query_validation.py   # Validation experiment runner
 │   └── metadata_validation_v3.py      # Validation analysis
