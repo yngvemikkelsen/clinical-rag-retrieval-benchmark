@@ -12,25 +12,29 @@ This benchmark evaluates 13 retrieval configurations (10 embedding models, 2 abl
 
 ```
 .
-├── clinical_rag_benchmark_v3.py       # Main benchmark script (Colab, GPU required)
-├── all_results.csv                    # Full results for 294 conditions
-├── metadata_query_results.csv         # Validation experiment results (78 conditions)
-├── metadata_queries.json              # Metadata-only queries (validation)
-├── mtsamples_sample.csv               # MTSamples corpus (500 documents)
-├── pmc_patients_sample.csv            # PMC-Patients corpus (500 documents)
-├── synthetic_notes_copy.csv           # Synthetic corpus (500 documents)
-├── scripts/
-│   ├── metadata_query_colab.py        # Validation query generation (Colab)
-│   ├── metadata_query_validation.py   # Validation experiment runner
-│   └── metadata_validation_v3.py      # Validation analysis
+├── data/
+│   ├── mtsamples_sample.csv
+│   ├── pmc_patients_sample.csv
+│   ├── synthetic_notes.csv              
+│   └── metadata_queries.json
+├── results/
+│   ├── all_results.csv                  (294 conditions)
+│   ├── metadata_query_results.csv       (78 validation conditions)
+│   ├── bm25_sensitivity.csv
+│   ├── per_query_ranks_embed.csv
+│   └── per_query_ranks_bm25.csv
 ├── analysis/
-│   ├── paper3_anova_table3.py         # Reproduces Table 3 (ANOVA decomposition)
-│   ├── mixed_effects_analysis.py      # Per-query mixed-effects model (BE-3)
-│   ├── bm25_sensitivity_analysis.py   # BM25 parameter sensitivity (BE-8)
-│   ├── per_query_ranks_embed.csv      # Per-query ranks, embedding models (35,500 rows)
-│   ├── per_query_ranks_bm25.csv       # Per-query ranks, BM25 (3,000 rows)
-│   └── bm25_sensitivity.csv           # BM25 k1/b sweep results (96 rows)
-└── README.md
+│   ├── paper3_anova_table3.py
+│   ├── mixed_effects_analysis.py
+│   └── bm25_sensitivity_analysis.py
+├── scripts/
+│   ├── clinical_rag_benchmark_v3.py
+│   ├── metadata_query_colab.py
+│   ├── metadata_query_validation.py
+│   └── metadata_validation_v3.py
+├── README.md
+└── LICENSE
+├──
 ```
 
 ## Models
