@@ -6,7 +6,7 @@ Replication materials for:
 
 ## Overview
 
-This benchmark evaluates 13 retrieval configurations (10 embedding models, 2 ablation variants, 1 BM25 baseline) across 3 clinical corpora, 2 query formats, and 4 chunking strategies, yielding 294 experimental conditions. A factorial ANOVA decomposes retrieval performance (MRR@10) into contributions from model choice (40.8%), corpus type (24.6%), query format (19.2%), and chunking strategy (0.2%). A per-query mixed-effects analysis (N = 38,500) confirms the factor ordering with proper random effects for query difficulty (ICC = 0.208).
+This benchmark evaluates 13 retrieval configurations (10 embedding models, 2 ablation variants, 1 BM25 baseline) across 3 clinical corpora, 2 query formats, and 4 chunking strategies, yielding 294 experimental conditions. A factorial ANOVA decomposes retrieval performance (MRR@10) into contributions from model choice (40.8%), corpus type (24.6%), query format (19.2%), and chunking strategy (0.2%). A per-query mixed-effects analysis (N = 38,500) confirms the factor ordering with proper random effects for query difficulty (ICC = 0.210).
 
 ## Repository Structure
 
@@ -79,7 +79,7 @@ pip install pandas statsmodels scipy
 python analysis/mixed_effects_analysis.py
 ```
 
-Expected: model chi-squared = 13,362.5 (p < .001), dataset chi-squared = 825.6 (p < .001), query format chi-squared = 4,798.2 (p < .001), ICC = 0.208, pseudo R-squared = 0.376.
+Expected: model chi-squared = 13,540.6 (p < .001), dataset chi-squared = 801.6 (p < .001), query format chi-squared = 4,456.9 (p < .001), ICC = 0.210, pseudo R-squared = 0.373.
 
 ### BM25 Sensitivity Analysis
 
